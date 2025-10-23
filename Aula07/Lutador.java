@@ -75,7 +75,7 @@ public class Lutador {
         return categoria;
     }
 
-    public void setCategoria() {
+    private void setCategoria() {
         if (peso < 52.2) {
             categoria = "Peso inválido para entrar na competição";
         } else if (peso <= 70.3) {
@@ -137,7 +137,7 @@ public class Lutador {
     }
 
     public void perderLuta() {
-        this.setDerrotas(this.getEmpates() + 1);
+        this.setDerrotas(this.getDerrotas() + 1);
     }
 
     public void empatarLuta() {
