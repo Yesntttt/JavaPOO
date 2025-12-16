@@ -1,0 +1,45 @@
+package Aula14;
+
+public abstract class Pessoa {
+
+    protected String nome;
+    protected int idade;
+    protected String sexo;
+    protected double exp;
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public String getSexo() {
+        return sexo;
+    }
+
+    public void setSexo(String sexo) {
+        this.sexo = sexo;
+    }
+
+    public double getExp() {
+        return exp;
+    }
+
+    public void setExp(double exp) {
+        this.exp = exp;
+    }
+
+    protected void ganharEXP(double n) {
+        this.setExp(n);
+    }
+}
